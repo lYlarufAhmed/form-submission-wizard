@@ -1,13 +1,84 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: darkmagenta;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.Card {
+    background-color: white;
+    height: 7rem;
+    width: 30rem;
+    border-radius: .6rem;
+    display: flex;
+    padding: 1rem;
+}
+
+.Sections {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: .5rem;
+    padding: .5rem 0;
+}
+
+.Section{
+    display: flex;
+    gap: .6rem;
+}
+
+.SL{
+    border-radius: 50%;
+    padding: .15rem .5rem;
+    /*height: max-content;*/
+    /*width: 1rem;*/
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    background-color: lightgray;
+}
+.SL.Active{
+    color: white;
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+.Title{
+    color: rgba(0,0,0,.5)
+}
+.Title.Active{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.FormContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+.Buttons{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+button{
+    flex: 0 1 40%;
+    padding: .7rem .2rem;
+    justify-content: space-between;
+    border: none;
+    font-weight: bolder;
+}
+button:hover{
+    cursor: pointer;
 }
